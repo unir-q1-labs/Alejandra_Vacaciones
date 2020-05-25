@@ -62,6 +62,41 @@
     <dmn:informationRequirement id="_504C4FDE-064E-42EF-B441-1EC29571BB1E">
       <dmn:requiredInput href="#_7D0BB9B1-BA72-46BC-AC71-F960B04D390F"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_9A3896B4-D535-4896-A4DA-4D199F60A367" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_24F007FD-A6A4-485C-BCBB-5EF695C6A923">
+        <dmn:inputExpression id="_0FCB9DDC-9E7C-40C5-81FA-ED3255C4B105" typeRef="number">
+          <dmn:text>Antiguedad</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_58CFFE18-83E1-40D4-8074-1476168628C6">
+        <dmn:inputExpression id="_46FD7856-75BD-40EB-97F3-E8A40A6DAD85" typeRef="number">
+          <dmn:text>Edad</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_EAB8EAA5-709E-478C-97C3-04F585442DB0"/>
+      <dmn:rule id="_C557ACAA-4378-4622-9D6B-220C23B23BE9">
+        <dmn:inputEntry id="_E2CE0DF9-63D1-4327-966A-74495D822939">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_5CDB13CE-A872-4E4B-99E5-E29759627441">
+          <dmn:text>&lt;18,>=60</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_AA058001-A064-4FF1-B08C-B936CAC941C8">
+          <dmn:text>5</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_54B633EF-FDC0-4A57-8121-E87A1BFA8A65">
+        <dmn:inputEntry id="_201B5576-00D1-43CD-89E6-FDBB48149CA9">
+          <dmn:text>&lt;30</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_7D3DF469-6163-42A1-8A96-B366E829FB07">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_A5CF11AA-2774-45EC-BF55-E927AD13E3E5">
+          <dmn:text>5</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmn:decision id="_66019DBA-30EC-4EF3-B319-E793C94E69E1" name="Extra2días">
     <dmn:extensionElements/>
@@ -110,6 +145,13 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_300A1C03-16D4-4305-8794-DB1F1B017EDC">
             <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_9A3896B4-D535-4896-A4DA-4D199F60A367">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
