@@ -10,7 +10,7 @@
     <dmn:informationRequirement id="_42F29554-425D-40DC-BFAF-692F3F05AEC0">
       <dmn:requiredInput href="#_7D0BB9B1-BA72-46BC-AC71-F960B04D390F"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_9DAD86F7-B1CD-471B-97C8-9707A4B75B0F" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_9DAD86F7-B1CD-471B-97C8-9707A4B75B0F" hitPolicy="COLLECT" aggregation="MAX" preferredOrientation="Rule-as-Row">
       <dmn:input id="_F890441A-054E-46B6-9FD0-69756D454855">
         <dmn:inputExpression id="_5A3277F0-4C24-41A1-BE17-BF7DB7E4C214" typeRef="number">
           <dmn:text>Edad</dmn:text>
@@ -62,7 +62,7 @@
     <dmn:informationRequirement id="_504C4FDE-064E-42EF-B441-1EC29571BB1E">
       <dmn:requiredInput href="#_7D0BB9B1-BA72-46BC-AC71-F960B04D390F"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_9A3896B4-D535-4896-A4DA-4D199F60A367" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_9A3896B4-D535-4896-A4DA-4D199F60A367" hitPolicy="COLLECT" aggregation="MAX" preferredOrientation="Rule-as-Row">
       <dmn:input id="_24F007FD-A6A4-485C-BCBB-5EF695C6A923">
         <dmn:inputExpression id="_0FCB9DDC-9E7C-40C5-81FA-ED3255C4B105" typeRef="number">
           <dmn:text>Antiguedad</dmn:text>
@@ -107,7 +107,7 @@
     <dmn:informationRequirement id="_DEA4F570-3150-483E-82DE-D2045DFF06A2">
       <dmn:requiredInput href="#_7D0BB9B1-BA72-46BC-AC71-F960B04D390F"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_6FD7D3B5-81D3-4BC0-91A3-92E61490631B" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_6FD7D3B5-81D3-4BC0-91A3-92E61490631B" hitPolicy="COLLECT" aggregation="MAX" preferredOrientation="Rule-as-Row">
       <dmn:input id="_5B8D671B-CAD1-4DB4-82E1-6DE132D629CE">
         <dmn:inputExpression id="_2A343C85-1065-402A-AB65-777C287E950C" typeRef="number">
           <dmn:text>Antiguedad</dmn:text>
