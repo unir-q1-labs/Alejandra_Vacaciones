@@ -153,7 +153,7 @@
   </dmn:inputData>
   <dmn:decision id="_782549C9-D8B4-4237-B0EF-13E6A7D4BA98" name="Total de días de vacaciones">
     <dmn:extensionElements/>
-    <dmn:variable id="_9A2E64E5-EEE1-45C3-8724-5CFE81753FCC" name="Total de días de vacaciones"/>
+    <dmn:variable id="_9A2E64E5-EEE1-45C3-8724-5CFE81753FCC" name="Total de días de vacaciones" typeRef="number"/>
     <dmn:informationRequirement id="_A071EDA0-309D-433A-8138-E674ADD0441D">
       <dmn:requiredDecision href="#_95BBC69E-6AF1-4BC5-8D22-9B73A1ABB5A3"/>
     </dmn:informationRequirement>
@@ -166,6 +166,9 @@
     <dmn:informationRequirement id="_9B0DB47F-4A43-478A-AEBE-05A65E67DCAF">
       <dmn:requiredDecision href="#_66019DBA-30EC-4EF3-B319-E793C94E69E1"/>
     </dmn:informationRequirement>
+    <dmn:literalExpression id="_B992AA1F-B64B-4665-B043-12DD9A78601D">
+      <dmn:text>diasvacaciones+max(Extra5días,Extra3días)+Extra2días</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
@@ -194,6 +197,9 @@
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_B992AA1F-B64B-4665-B043-12DD9A78601D">
+            <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
