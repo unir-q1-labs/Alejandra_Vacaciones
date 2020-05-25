@@ -46,9 +46,9 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:decision id="_95BBC69E-6AF1-4BC5-8D22-9B73A1ABB5A3" name="Díasdevacaciones">
+  <dmn:decision id="_95BBC69E-6AF1-4BC5-8D22-9B73A1ABB5A3" name="Diasvacaciones">
     <dmn:extensionElements/>
-    <dmn:variable id="_390204B5-5F0E-4D9D-9804-0D61A3936F6A" name="Díasdevacaciones"/>
+    <dmn:variable id="_390204B5-5F0E-4D9D-9804-0D61A3936F6A" name="Diasvacaciones"/>
     <dmn:literalExpression id="_300A1C03-16D4-4305-8794-DB1F1B017EDC">
       <dmn:text>22</dmn:text>
     </dmn:literalExpression>
