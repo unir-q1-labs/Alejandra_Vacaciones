@@ -12,13 +12,21 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_9DAD86F7-B1CD-471B-97C8-9707A4B75B0F" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_F890441A-054E-46B6-9FD0-69756D454855">
-        <dmn:inputExpression id="_5A3277F0-4C24-41A1-BE17-BF7DB7E4C214">
-          <dmn:text>input-1</dmn:text>
+        <dmn:inputExpression id="_5A3277F0-4C24-41A1-BE17-BF7DB7E4C214" typeRef="number">
+          <dmn:text>Edad</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_74A70F02-09BF-47D4-8799-872CB07B9667">
+        <dmn:inputExpression id="_F6D7DE0A-3EE0-4ABB-94CF-0A601774D6A6" typeRef="number">
+          <dmn:text>input-2</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_9B2875C7-38A6-4AF4-B1DC-89296FC7695F"/>
       <dmn:rule id="_93436D18-48D5-4909-8479-607CDEABFA3A">
         <dmn:inputEntry id="_13307255-B534-41E5-B1FD-618FCE39A1C9">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_5DE9AD2A-AA42-4ABE-8910-11EDA84B842D">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_0455CC5F-F1CB-46BE-B205-08D64961BEEB">
@@ -84,6 +92,7 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_9DAD86F7-B1CD-471B-97C8-9707A4B75B0F">
             <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
