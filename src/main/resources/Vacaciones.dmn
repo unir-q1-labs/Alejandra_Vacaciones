@@ -1,11 +1,109 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_7CD90832-7036-4C8A-96CD-F3409152FDB3" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_4B917B19-1339-403A-A721-91C091770BFF" name="Vacaciones" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_7CD90832-7036-4C8A-96CD-F3409152FDB3">
   <dmn:extensionElements/>
+  <dmn:decision id="_E0A250A7-E92D-426D-A668-B384222EBF6C" name="Extra3días">
+    <dmn:extensionElements/>
+    <dmn:variable id="_EAF98710-9033-459F-A2DC-A7BB69730E7C" name="Extra3días"/>
+  </dmn:decision>
+  <dmn:decision id="_30BC3EBB-0A56-4FB9-926E-0141B313D920" name="Extra5días">
+    <dmn:extensionElements/>
+    <dmn:variable id="_5C9E2FDC-F225-4AA2-9A40-B7522595D38E" name="Extra5días"/>
+  </dmn:decision>
+  <dmn:decision id="_95BBC69E-6AF1-4BC5-8D22-9B73A1ABB5A3" name="Díasdevacaciones">
+    <dmn:extensionElements/>
+    <dmn:variable id="_390204B5-5F0E-4D9D-9804-0D61A3936F6A" name="Díasdevacaciones"/>
+    <dmn:literalExpression id="_300A1C03-16D4-4305-8794-DB1F1B017EDC">
+      <dmn:text>22</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
+  <dmn:decision id="_66019DBA-30EC-4EF3-B319-E793C94E69E1" name="Extra2días">
+    <dmn:extensionElements/>
+    <dmn:variable id="_0E8C2706-0518-44CE-A01C-AE66B77D51E9" name="Extra2días"/>
+  </dmn:decision>
+  <dmn:inputData id="_7D0BB9B1-BA72-46BC-AC71-F960B04D390F" name="Antiguedad">
+    <dmn:extensionElements/>
+    <dmn:variable id="_E1CCB26F-D67D-48F1-8B04-C6EF293F482E" name="Antiguedad" typeRef="number"/>
+  </dmn:inputData>
+  <dmn:inputData id="_87A1B69A-02E1-49F3-AE45-078CBC2A9031" name="Edad">
+    <dmn:extensionElements/>
+    <dmn:variable id="_11FD6511-7A38-4777-956B-2CA62C3691A4" name="Edad" typeRef="number"/>
+  </dmn:inputData>
+  <dmn:decision id="_782549C9-D8B4-4237-B0EF-13E6A7D4BA98" name="Total de días de vacaciones">
+    <dmn:extensionElements/>
+    <dmn:variable id="_9A2E64E5-EEE1-45C3-8724-5CFE81753FCC" name="Total de días de vacaciones"/>
+  </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_300A1C03-16D4-4305-8794-DB1F1B017EDC">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-_87A1B69A-02E1-49F3-AE45-078CBC2A9031" dmnElementRef="_87A1B69A-02E1-49F3-AE45-078CBC2A9031" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="328" y="221" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_782549C9-D8B4-4237-B0EF-13E6A7D4BA98" dmnElementRef="_782549C9-D8B4-4237-B0EF-13E6A7D4BA98" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="329" y="45" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_E0A250A7-E92D-426D-A668-B384222EBF6C" dmnElementRef="_E0A250A7-E92D-426D-A668-B384222EBF6C" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="265" y="133" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_66019DBA-30EC-4EF3-B319-E793C94E69E1" dmnElementRef="_66019DBA-30EC-4EF3-B319-E793C94E69E1" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="538" y="133" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_30BC3EBB-0A56-4FB9-926E-0141B313D920" dmnElementRef="_30BC3EBB-0A56-4FB9-926E-0141B313D920" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="408" y="133" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_95BBC69E-6AF1-4BC5-8D22-9B73A1ABB5A3" dmnElementRef="_95BBC69E-6AF1-4BC5-8D22-9B73A1ABB5A3" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="692" y="141" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_7D0BB9B1-BA72-46BC-AC71-F960B04D390F" dmnElementRef="_7D0BB9B1-BA72-46BC-AC71-F960B04D390F" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="472.29906542056074" y="221" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
