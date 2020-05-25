@@ -167,7 +167,7 @@
       <dmn:requiredDecision href="#_66019DBA-30EC-4EF3-B319-E793C94E69E1"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_B992AA1F-B64B-4665-B043-12DD9A78601D">
-      <dmn:text>diasvacaciones+max(Extra5días,Extra3días)+Extra2días</dmn:text>
+      <dmn:text>diasvacaciones + max (Extra5días, Extra3días) + Extra2días</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmndi:DMNDI>
@@ -199,7 +199,7 @@
             <kie:width>100.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B992AA1F-B64B-4665-B043-12DD9A78601D">
-            <kie:width>300.0</kie:width>
+            <kie:width>675.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
