@@ -147,9 +147,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_E1CCB26F-D67D-48F1-8B04-C6EF293F482E" name="Antiguedad" typeRef="number"/>
   </dmn:inputData>
-  <dmn:inputData id="_87A1B69A-02E1-49F3-AE45-078CBC2A9031" name="Edads">
+  <dmn:inputData id="_87A1B69A-02E1-49F3-AE45-078CBC2A9031" name="Edad">
     <dmn:extensionElements/>
-    <dmn:variable id="_11FD6511-7A38-4777-956B-2CA62C3691A4" name="Edads" typeRef="number"/>
+    <dmn:variable id="_11FD6511-7A38-4777-956B-2CA62C3691A4" name="Edad" typeRef="number"/>
   </dmn:inputData>
   <dmn:decision id="_782549C9-D8B4-4237-B0EF-13E6A7D4BA98" name="Total de días de vacaciones">
     <dmn:extensionElements/>
